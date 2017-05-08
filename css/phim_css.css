@@ -1,0 +1,41 @@
+body{
+    margin: 5px 20px;
+    font-size: 18px;
+}
+.header, .menu_list, .footer{
+    padding: 5px 10px;
+    margin: 10px 0px;
+    background: whitesmoke;
+    clear: both;
+}
+h1{
+    color: green;
+}
+.menu_list{
+    text-align: center;
+    padding: 10px;
+}
+.menu_list div{
+    display: inline;
+    padding: 5px 10px;
+}
+.list_movie, .content{
+    background: whitesmoke;
+    border: 2px solid whitesmoke;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+}
+.list_movie{
+    float: left;
+    width: 30%;
+}
+.content{
+    float: right;
+    width: 60%;
+}
+.footer{
+    text-align: center;
+}
+.add_row{
+    border-right: 2px solid black;
+}

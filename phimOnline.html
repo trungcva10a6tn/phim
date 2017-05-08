@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Phim Online</title>
+        <link rel="stylesheet" href="css/phim_css.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>PHIM HOẠT HÌNH ONLINE</h1>
+        </div>
+        <div class="menu_list">
+            <div class="add_row">Phim hoạt hình</div>
+            <div class="add_row">Phim hoạt hình yêu thích</div>
+            <div class="add_row">Nhân vật hoạt hình</div>
+            <div>Góp ý</div>
+        </div>
+        <div class="list_movie">
 
-</body>
+        </div>
+        <div class="content">
+            <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/JGwWNGJdvx8" frameborder="0" allowfullscreen></iframe>
+            <div> Thí nghiệm tạo nút điều khiến mới cho video</div>
+
+            <div style="text-align:center">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
+                <br><br>
+                <video id="video1" class="player-video" width="640" height="360"  playsinline="" webkit-playsinline="" src="https://redirector.googlevideo.com/videoplayback?api=videoapi.io&amp;id=186464e64c03938a&amp;itag=59&amp;source=webdrive&amp;requiressl=yes&amp;ttl=transient&amp;mm=30&amp;mn=sn-o097znel&amp;ms=nxu&amp;mv=u&amp;pl=33&amp;ei=h-gPWeeOEoH9qQWHhK3YDQ&amp;mime=video/mp4&amp;lmt=1494143904555439&amp;mt=1494214596&amp;ip=2600:3c01::f03c:91ff:fe1f:fc40&amp;ipbits=0&amp;expire=1494229191&amp;sparams=ip%2Cipbits%2Cexpire%2Cid%2Citag%2Csource%2Crequiressl%2Cttl%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cei%2Cmime%2Clmt&amp;signature=6A71123E60E56050DD714AE403F89E4F5959A050.96AD744AE4996D9A42FFC3645CC20017E56F52DC&amp;key=ck2&amp;app=explorer&amp;title=[VuiGhe.Net] Vua Hai Tac - Tap 787-(480p)">
+                </video>
+            </div>
+
+            <script>
+                var myVideo = document.getElementById("video1");
+
+                function playPause() {
+                    if (myVideo.paused)
+                        myVideo.play();
+                    else
+                        myVideo.pause();
+                }
+
+                function makeBig() {
+                    myVideo.width = 640;
+                }
+
+                function makeSmall() {
+                    myVideo.width = 320;
+                }
+
+                function makeNormal() {
+                    myVideo.width = 420;
+                }
+            </script>
+        </div>
+        <div class="footer">
+            <p>&#169 2017 Thiết kế web bởi trang hoathinhvn.net</p>
+        </div>
+    </body>
 </html>
