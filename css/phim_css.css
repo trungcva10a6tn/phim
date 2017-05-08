@@ -27,7 +27,7 @@ h1{
 }
 .list_movie{
     float: left;
-    width: 30%;
+    width: 28%;
 }
 .content{
     float: right;
@@ -38,4 +38,12 @@ h1{
 }
 .add_row{
     border-right: 2px solid black;
+}
+.movie_info{
+    clear: both;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background: white;
+    font-size: 15px;
 }
