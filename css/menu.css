@@ -1,0 +1,45 @@
+.menu_1{
+    background: cornflowerblue;
+    color: white;
+    list-style: none;
+    padding: 5px 10px;
+    margin: 5px;
+}
+.menu_1 li{
+    display: inline-block;
+}
+.menu_1 li:hover{
+    background: white;
+    color: black;
+}
+.menu_2{
+    display: none;
+    background: cornflowerblue;
+    color: white;
+    list-style: none;
+    padding: 5px 10px;
+    position: absolute;
+}
+.menu_2 li{
+    display: block;
+    position: relative;
+    width: 100px;
+}
+.menu_1 li:hover .menu_2{
+    display: block;
+}
+/*mục 2 thử nghiệm*/
+.demo1{
+    
+}
+.demo1 ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+.demo1 li{
+    display: block;
+}
+.demo1:hover ul{
+    display: block;
+}
